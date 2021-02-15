@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import Namespaces from "@/components/namespaces"
+  import Namespaces from "../components/Namespaces"
 
   export default {
     components: {
