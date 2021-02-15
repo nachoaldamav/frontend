@@ -121,7 +121,7 @@ export default {
     }
   },
   async mounted () {
-    const { data: details } = await this.$axios.get(`https://raw.githubusercontent.com/srdrabs/offers-tracker/master/database/offers/${this.$route.params.id}.json`);
+    const { data: details } = await this.$axios.get(`https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/offers/${this.$route.params.id}.json`);
     this.details = details;
     await this.$store.dispatch('fetchCurrencies');
     try {
