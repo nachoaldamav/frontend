@@ -145,7 +145,7 @@ export default {
         const currency = this.$store.getters.getCountry(this.country).currency;
         await this.$store.dispatch('fetchCurrencies');
         const { data: titles } = await this.$axios.get('https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/titles.json');
-        const { data: promotionsData } = await this.$axios.get(`https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/promotions/${this.country}.json`);
+        const { data: promotionsData } = await this.$axios.get(`https://raw.githubusercontent.com/srdrabx/prices-tracker-egs/master/database/promotions/${this.country}.json`);
         this.currency = this.$store.getters.getCurrency(currency);
         const items = Object.keys(promotionsData)
           .map((offerId) => {
