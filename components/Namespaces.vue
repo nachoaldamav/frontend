@@ -50,14 +50,14 @@ export default {
       return this.namespaceJSON[namespace]
     },
     getLinkFor(id) {
-      return `https://raw.githubusercontent.com/EpicData-info/${this.type}s-tracker/master/database/${this.type}s/${id}.json`
+      return `https://raw.githubusercontent.com/srdrabx/${this.type}s-tracker/master/database/${this.type}s/${id}.json`
     },
     getVisibility(namespace) {
       return !this.searchFilter || namespace.toLowerCase().includes(this.searchFilter.toLowerCase())
     }
   },
   async mounted() {
-    const {data} = await this.$axios.get(`https://raw.githubusercontent.com/EpicData-info/${this.type}s-tracker/master/database/namespaces.json`);
+    const {data} = await this.$axios.get(`https://raw.githubusercontent.com/srdrabx/${this.type}s-tracker/master/database/namespaces.json`);
     this.namespaceJSON = data;
     this.show = false;
 
