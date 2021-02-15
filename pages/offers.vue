@@ -164,7 +164,7 @@ export default {
     },
   },
   async mounted () {
-    const { data } = await this.$axios.get('https://raw.githubusercontent.com/EpicData-info/offers-tracker/master/database/list.json');
+    const { data } = await this.$axios.get('https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/list.json');
     this.items = data;
   },
 }
