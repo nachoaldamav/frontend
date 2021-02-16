@@ -6,11 +6,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: 'EpicData.info - EpicGames data tracker',
+    title: 'EpicData - Epic Games data tracker',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'This tool was made to give better insight into the EpicStore offers, items and another data.' }
+      { hid: 'description', name: 'description', content: 'This tool was made to give better insight into the Epic Games Store offers, items and another data.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -30,8 +30,6 @@ export default {
   */
   plugins: [
     '@/plugins/axios',
-    '@/plugins/google-analytics',
-    '@/plugins/google-ads',
   ],
   /*
   ** Nuxt.js dev-modules
