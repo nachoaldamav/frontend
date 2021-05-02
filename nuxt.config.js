@@ -18,7 +18,7 @@ export default {
     script: [
       {
         src: "https://static.cloudflareinsights.com/beacon.min.js",
-        data-cf-beacon='{"token": "87f18c802d2c47b4887a59719c16450e"}',
+        'data-cf-beacon': '{"token": "87f18c802d2c47b4887a59719c16450e"}',
       },
     ],
   },
