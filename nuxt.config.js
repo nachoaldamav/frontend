@@ -14,13 +14,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ],
-    script: [
-      {
-        src: "https://static.cloudflareinsights.com/beacon.min.js",
-        'data-cf-beacon': '{"token": "87f18c802d2c47b4887a59719c16450e"}',
-      },
-    ],
+    ]
   },
   /*
   ** Customize the progress-bar color
