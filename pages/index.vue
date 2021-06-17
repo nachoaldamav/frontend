@@ -33,13 +33,13 @@
         label="Get current price for country"
         description="Replace {COUNTRY} and {OFFER_ID}. Sample values: US, 9064fdd49de04718abe631788ad5a759"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/prices-tracker/master/database/prices/{COUNTRY}/{OFFER_ID}.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/prices-tracker-egs/master/database/prices/{COUNTRY}/{OFFER_ID}.json"></b-form-input>
       </b-form-group>
       <b-form-group
         label="Get prices history for country"
         description="Replace {COUNTRY} and {OFFER_ID}. Sample values: US, 9064fdd49de04718abe631788ad5a759"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/prices-tracker/master/database/prices-history/{COUNTRY}/{OFFER_ID}.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/prices-tracker-egs/master/database/prices-history/{COUNTRY}/{OFFER_ID}.json"></b-form-input>
       </b-form-group>
       <b-form-group
         label="Get all namespaces with their offers"
@@ -53,7 +53,7 @@
       </b-form-group>
       <b-form-group
         label="Get tracking statistics"
-        description="Replace {REPOSITORY}. Currently available are three repositories: offers-tracker, items-tracker, prices-tracker"
+        description="Replace {REPOSITORY}. Currently available are three repositories: offers-tracker, items-tracker, prices-tracker-egs"
       >
         <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/{REPOSITORY}/master/database/tracking-stats.json"></b-form-input>
       </b-form-group>
