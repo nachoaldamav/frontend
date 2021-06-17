@@ -13,7 +13,7 @@
       <p>
         <b-link href="https://github.com/srdrabx/offers-tracker" target="_blank">https://github.com/srdrabx/offers-tracker</b-link><br />
         <b-link href="https://github.com/srdrabx/items-tracker" target="_blank">https://github.com/srdrabx/items-tracker</b-link><br />
-        <b-link href="https://github.com/srdrabx/prices-tracker" target="_blank">https://github.com/srdrabx/prices-tracker</b-link><br />
+        <b-link href="https://github.com/srdrabx/prices-tracker-egs" target="_blank">https://github.com/srdrabx/prices-tracker-egs</b-link><br />
       </p>
       <br />
       <h2>Quick guide with github raw data</h2>
