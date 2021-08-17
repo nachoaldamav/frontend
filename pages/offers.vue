@@ -113,7 +113,7 @@ export default {
   },
   computed: {
     filteredItems () {
-      let searchQuery = this.$store.state.searchQuery.toLowerCase().trim();
+      let searchQuery = this.$store.state.searchQuery.toLowerCase().trim() || undefined;
       return this.items
         .filter((item) => {
           if (this.$route.query.category && item[3].indexOf(this.$route.query.category) === -1) {
