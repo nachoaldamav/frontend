@@ -113,7 +113,7 @@ export default {
   },
   computed: {
     filteredItems () {
-      let searchQuery = this.$store.state.searchQuery.toLowerCase().trim() || undefined;
+      let searchQuery = this.$store.state.searchQuery.toLowerCase().trim();
       return this.items
         .filter((item) => {
           if (this.$route.query.category && item[3].indexOf(this.$route.query.category) === -1) {
@@ -124,6 +124,9 @@ export default {
           }
           if (this.$route.query.ns && item[1] !== this.$route.query.ns) {
             return false;
+          }
+          if (item[2] === null) {
+            return false
           }
           return item[2].toLowerCase().indexOf(searchQuery) > -1;
         })
