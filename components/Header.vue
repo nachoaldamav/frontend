@@ -15,7 +15,7 @@
             <b-dropdown-item href="/item-namespaces">Item Namespaces</b-dropdown-item>
             <b-dropdown-item href="/offer-namespaces">Offer Namespaces</b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="https://github.com/EpicData-info" target="_blank">Github</b-nav-item>
+          <b-nav-item href="https://github.com/nachoaldamav" target="_blank">Github</b-nav-item>
           <b-nav-item href="https://discord.gg/Y2pymKn" target="_blank">Discord</b-nav-item>
         </b-navbar-nav>
 

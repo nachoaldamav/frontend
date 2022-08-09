@@ -73,7 +73,7 @@ export default {
     async routes () {
       const routes = [];
       routes.push(
-        ...await Axios.get('https://raw.githubusercontent.com/EpicData-info/offers-tracker/main/database/list.json')
+        ...await Axios.get('https://raw.githubusercontent.com/nachoaldamav/offers-tracker/main/database/list.json')
         .then(({ data }) => {
           return data.map((offer) => {
             return `/offer/${offer[0]}`;
@@ -81,7 +81,7 @@ export default {
         })
       );
       routes.push(
-        ...await Axios.get('https://raw.githubusercontent.com/EpicData-info/items-tracker/main/database/list.json')
+        ...await Axios.get('https://raw.githubusercontent.com/nachoaldamav/items-tracker/main/database/list.json')
         .then(({ data }) => {
           return data.map((item) => {
             return `/item/${item[0]}`;

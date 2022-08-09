@@ -6,7 +6,7 @@
       <b-button variant="primary" to="/offers?category=games&sortBy=5">New Games</b-button>
       <b-button variant="primary" to="/promotions">Promotions</b-button>
       <b-button variant="primary" href="https://discord.gg/Y2pymKn" target="_blank">Discord</b-button>
-      <b-button href="https://github.com/EpicData-info" target="_blank">Source Code</b-button>
+      <b-button href="https://github.com/nachoaldamav" target="_blank">Source Code</b-button>
     </b-jumbotron>
     <b-container>
       <h2>Tracking Repositories</h2>

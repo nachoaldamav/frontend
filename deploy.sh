@@ -17,6 +17,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -u -f https://github.com/EpicData-info/frontend master:gh-pages
+git push -u -f https://github.com/nachoaldamav/frontend master:gh-pages
 
 cd -

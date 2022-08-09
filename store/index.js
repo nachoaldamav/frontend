@@ -40,7 +40,7 @@ export const actions = {
     if (state.currencies) {
       return;
     }
-    const { data: currencies } = await this.$axios.get('https://raw.githubusercontent.com/EpicData-info/prices-tracker/main/database/currencies.json');
+    const { data: currencies } = await this.$axios.get('https://raw.githubusercontent.com/nachoaldamav/prices-tracker/main/database/currencies.json');
     commit('SET_CURRENCIES', currencies);
   },
 }
