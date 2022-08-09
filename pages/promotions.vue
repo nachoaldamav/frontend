@@ -131,7 +131,7 @@ export default {
     },
     async goToStore (offerId) {
       try {
-        const { data: offer } = await this.$axios.get(`https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/offers/${offerId}.json`);
+        const { data: offer } = await this.$axios.get(`https://raw.githubusercontent.com/nachoaldamav/offers-tracker/main/database/offers/${offerId}.json`);
         if (!offer.productSlug) {
           throw new Error('No product slug');
         }
@@ -144,8 +144,8 @@ export default {
       try {
         const currency = this.$store.getters.getCountry(this.country).currency;
         await this.$store.dispatch('fetchCurrencies');
-        const { data: titles } = await this.$axios.get('https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/titles.json');
-        const { data: promotionsData } = await this.$axios.get(`https://raw.githubusercontent.com/srdrabx/prices-tracker-egs/master/database/promotions/${this.country}.json`);
+        const { data: titles } = await this.$axios.get('https://raw.githubusercontent.com/nachoaldamav/offers-tracker/main/database/titles.json');
+        const { data: promotionsData } = await this.$axios.get(`https://raw.githubusercontent.com/nachoaldamav/prices-tracker-egs/main/database/promotions/${this.country}.json`);
         this.currency = this.$store.getters.getCurrency(currency);
         const items = Object.keys(promotionsData)
           .map((offerId) => {

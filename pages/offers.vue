@@ -167,7 +167,7 @@ export default {
     },
   },
   async mounted () {
-    const { data } = await this.$axios.get('https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/list.json');
+    const { data } = await this.$axios.get('https://raw.githubusercontent.com/nachoaldamav/offers-tracker/main/database/list.json');
     this.items = data;
   },
 }

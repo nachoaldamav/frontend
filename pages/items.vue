@@ -145,7 +145,7 @@ export default {
     },
   },
   async mounted () {
-    const { data } = await this.$axios.get('https://raw.githubusercontent.com/srdrabx/items-tracker/master/database/list.json');
+    const { data } = await this.$axios.get('https://raw.githubusercontent.com/nachoaldamav/items-tracker/main/database/list.json');
     this.items = data;
   },
 }

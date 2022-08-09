@@ -111,7 +111,7 @@ export default {
   methods: {
     async fetchPriceHistoryForCountry (country) {
       const currency = this.$store.getters.getCurrency(this.$store.getters.getCountry(country).currency);
-      const { data: pricesHistory } = await this.$axios.get(`https://raw.githubusercontent.com/srdrabx/prices-tracker-egs/master/database/prices-history/${country}/${this.$route.params.id}.json`);
+      const { data: pricesHistory } = await this.$axios.get(`https://raw.githubusercontent.com/nachoaldamav/prices-tracker-egs/main/database/prices-history/${country}/${this.$route.params.id}.json`);
       return pricesHistory.map((row) => {
         return {
           x: new Date(row[0]),
@@ -121,7 +121,7 @@ export default {
     }
   },
   async mounted () {
-    const { data: details } = await this.$axios.get(`https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/offers/${this.$route.params.id}.json`);
+    const { data: details } = await this.$axios.get(`https://raw.githubusercontent.com/nachoaldamav/offers-tracker/main/database/offers/${this.$route.params.id}.json`);
     this.details = details;
     await this.$store.dispatch('fetchCurrencies');
     try {

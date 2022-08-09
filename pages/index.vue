@@ -11,9 +11,9 @@
     <b-container>
       <h2>Tracking Repositories</h2>
       <p>
-        <b-link href="https://github.com/srdrabx/offers-tracker" target="_blank">https://github.com/srdrabx/offers-tracker</b-link><br />
-        <b-link href="https://github.com/srdrabx/items-tracker" target="_blank">https://github.com/srdrabx/items-tracker</b-link><br />
-        <b-link href="https://github.com/srdrabx/prices-tracker-egs" target="_blank">https://github.com/srdrabx/prices-tracker-egs</b-link><br />
+        <b-link href="https://github.com/nachoaldamav/offers-tracker" target="_blank">https://github.com/nachoaldamav/offers-tracker</b-link><br />
+        <b-link href="https://github.com/nachoaldamav/items-tracker" target="_blank">https://github.com/nachoaldamav/items-tracker</b-link><br />
+        <b-link href="https://github.com/nachoaldamav/prices-tracker-egs" target="_blank">https://github.com/nachoaldamav/prices-tracker-egs</b-link><br />
       </p>
       <br />
       <h2>Quick guide with github raw data</h2>
@@ -21,41 +21,41 @@
         label="Get offer details"
         description="Replace {OFFER_ID}. Sample id: 9064fdd49de04718abe631788ad5a759"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/offers/{OFFER_ID}.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/nachoaldamav/offers-tracker/main/database/offers/{OFFER_ID}.json"></b-form-input>
       </b-form-group>
       <b-form-group
         label="Get item details"
         description="Replace {OFFER_ID}. Sample id: 9064fdd49de04718abe631788ad5a759"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/items-tracker/master/database/items/{OFFER_ID}.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/nachoaldamav/items-tracker/main/database/items/{OFFER_ID}.json"></b-form-input>
       </b-form-group>
       <b-form-group
         label="Get current price for country"
         description="Replace {COUNTRY} and {OFFER_ID}. Sample values: US, 9064fdd49de04718abe631788ad5a759"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/prices-tracker-egs/master/database/prices/{COUNTRY}/{OFFER_ID}.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/nachoaldamav/prices-tracker-egs/main/database/prices/{COUNTRY}/{OFFER_ID}.json"></b-form-input>
       </b-form-group>
       <b-form-group
         label="Get prices history for country"
         description="Replace {COUNTRY} and {OFFER_ID}. Sample values: US, 9064fdd49de04718abe631788ad5a759"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/prices-tracker-egs/master/database/prices-history/{COUNTRY}/{OFFER_ID}.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/nachoaldamav/prices-tracker-egs/main/database/prices-history/{COUNTRY}/{OFFER_ID}.json"></b-form-input>
       </b-form-group>
       <b-form-group
         label="Get all namespaces with their offers"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/offers-tracker/master/database/namespaces.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/nachoaldamav/offers-tracker/main/database/namespaces.json"></b-form-input>
       </b-form-group>
       <b-form-group
         label="Get all namespaces with their items"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/items-tracker/master/database/namespaces.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/nachoaldamav/items-tracker/main/database/namespaces.json"></b-form-input>
       </b-form-group>
       <b-form-group
         label="Get tracking statistics"
         description="Replace {REPOSITORY}. Currently available are three repositories: offers-tracker, items-tracker, prices-tracker-egs"
       >
-        <b-form-input readonly value="https://raw.githubusercontent.com/srdrabx/{REPOSITORY}/master/database/tracking-stats.json"></b-form-input>
+        <b-form-input readonly value="https://raw.githubusercontent.com/nachoaldamav/{REPOSITORY}/main/database/tracking-stats.json"></b-form-input>
       </b-form-group>
       <br />
     </b-container>
