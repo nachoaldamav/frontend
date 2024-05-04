@@ -25,7 +25,7 @@
       </b-form-group>
       <b-form-group
         label="Get item details"
-        description="Replace {OFFER_ID}. Sample id: 9064fdd49de04718abe631788ad5a759"
+        description="Replace {OFFER_ID}. Sample id: 1c3b0f36983d414cb4bb3485342b5de8"
       >
         <b-form-input readonly value="https://raw.githubusercontent.com/nachoaldamav/items-tracker/main/database/items/{OFFER_ID}.json"></b-form-input>
       </b-form-group>
