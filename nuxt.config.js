@@ -66,8 +66,9 @@ export default {
     extend(config, ctx) {},
   },
 
-  /* generate: {
+  generate: {
     async routes () {
+      // Cloudflare pages only supports 20000 files to upload, so we need to split the routes
       const routes = [];
       routes.push(
         ...await Axios.get('https://raw.githubusercontent.com/nachoaldamav/offers-tracker/main/database/list.json')
@@ -85,7 +86,8 @@ export default {
           });
         })
       );
-      return routes;
+      // We get the first 15000 routes and let 5000 for other files
+      return routes.slice(0, 15000);
     }
-  }, */
+  },
 };
